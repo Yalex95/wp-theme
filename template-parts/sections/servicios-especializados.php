@@ -8,14 +8,17 @@ $servicios = [
   [
     'title' => 'Automatizacion de sistemas',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion.webp',
+    'class'=> 'button-padding'
   ],
   [
     'title' => 'Equipamiento de pozos de agua',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_equipamiento.webp',
+    'class' => 'button-padding'
   ],
   [
     'title' => 'Mantenimiento a pozos de agua y equipos de bombeo',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_mantenimiento.webp',
+    'class' => 'button-padding'
   ],
   [
     'title' => 'Servicios especiales',
@@ -30,11 +33,11 @@ $servicios = [
 
 ?>
 
-<section id="servicios-especializados" class="md:max-w-[1720px]  w-full md:ms-auto flex flex-col md:gap-y-[135px]" aria-labelledby="servicios-title">
-  <h2 class="capitalize">Servicios <span>Especializados</span></h2>
+<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[135px] gap-[30px]" aria-labelledby="servicios-title">
+  <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2>
 
 
-<div>
+<div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1920px]  w-full ms-auto">
     <div class="flex flex-col items-center md:items-start  justify-center md:flex-row md:gap-[30px]">
     <?php
       get_template_part(
@@ -43,19 +46,24 @@ $servicios = [
         [
           'title' => 'Perforación de Pozos',
           'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion.webp',
+          'class'=> 'static-slide'
         ],
       )
         ?>
       <div class="swiper services ">
        
         <div class="swiper-wrapper">
-          <?php foreach ($servicios as $servicio) { ?>
-            <div class="swiper-slide md:!w-[350px]">
-              <?php get_template_part(
-                'template-parts/components/swiper-cards/service-card',
-                null,
-                $servicio
-              ); ?>
+          <?php 
+          $counter = 0;
+          foreach ($servicios as $servicio) { ?>
+          <!-- !w-[230px] md:!w-[350px] -->
+            <div class="swiper-slide md:!w-[350px]  ">
+              <?php
+                get_template_part(
+                  'template-parts/components/swiper-cards/service-card',
+                  null,
+                  $servicio
+                );  ?>
             </div>
           <?php } ?>
         </div>

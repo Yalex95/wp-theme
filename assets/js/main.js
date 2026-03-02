@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(".swiper.services", {
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
     centeredSlides: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -11,13 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       768: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
         
       },
       1024: {
         slidesPerView: "auto",
         spaceBetween: 30,
+        loop: true,
         centeredSlides: false,
       },
     },

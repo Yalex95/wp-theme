@@ -71,7 +71,16 @@
     }
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* contenedor */
 h1 {
   font-weight: 800;
@@ -107,14 +116,25 @@ footer {
 
 /* Servicios especializados */
 #servicios-especializados {
-  /* padding: 40px 0 50px; */
-  #service-card {
+  padding: 50px 0 50px;
+  .service-card {
     #button-link {
       /* padding: 19px 34.57px 19.93px 20px; */
       border-bottom-right-radius: 20px;
       corner-shape: bevel;
       /* font-size: 18px; */
       font-weight: 600;
+    }
+  }
+  .service-card.button-padding{
+    #button-link{
+      padding: 7px 34.57px 7.9px 20px;
+    }
+  }
+  .service-card.static-card {
+    img {
+      border-top-left-radius: 20px;
+      corner-shape: bevel;
     }
   }
   #catalog {
@@ -194,7 +214,7 @@ footer {
   }
   #servicios-especializados {
     padding: 40px 0 50px;
-    #service-card {
+    .service-card {
       #button-link {
         padding: 19px 34.57px 19.93px 20px;
         font-size: 18px;
