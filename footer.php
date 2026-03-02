@@ -1,50 +1,51 @@
 <footer class="bg-primary text-white">
-  <div class="max-w-[1620px] mx-auto px-6 py-16">
+  <div id="footer-container" class="max-w-[1620px] mx-auto ">
 
     <!-- Top Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-10">
+    <div class=" max-w-[1520px] mx-auto grid grid-cols-[330px_970px_250px] ">
 
       <!-- Logo + Dirección -->
-      <section>
-        <div class="mb-6">
+      <section class="mr-[80px]">
+        <div class="mb-[50px]">
           <?php
           $custom_logo_id = get_theme_mod('custom_logo');
           $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
           if ($logo):
             ?>
             <a href="<?php echo esc_url(home_url('/')); ?>">
-              <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" />
+              <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250"
+                height="59" />
             </a>
             <!-- logo fallback -->
           <?php else: ?>
             <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp"
-                alt="<?php bloginfo('name'); ?>" class="h-10 w-auto">
+                alt="<?php bloginfo('name'); ?>" width="250" height="59" class="h-10 w-auto">
             </a>
           <?php endif; ?>
         </div>
 
-        <address class="not-italic text-sm leading-relaxed ">
+        <address class="not-italic leading-relaxed ">
           <strong>Dirección:</strong><br>
           C. Nueva Orleans 1127, La Aurora,<br>
           44460 Guadalajara, Jal.
         </address>
       </section>
 
-      <section class="col-span-4">
+      <section class="mr-[20px]">
         <!-- Nosotros -->
         <nav aria-label="Nosotros">
-          <h3 class="uppercase text-sm tracking-wider mb-4">Nosotros</h3>
+          <h3 class="uppercase tracking-wider mb-[20px]">Nosotros</h3>
         </nav>
 
         <!-- Servicios -->
         <nav aria-labelledby="footer-servicios-title">
-          <h3 id="footer-servicios-title" class="uppercase text-sm tracking-wider mb-4">Servicios</h3>
+          <h3 id="footer-servicios-title" class="uppercase tracking-wider mb-4">Servicios</h3>
           <?php
           wp_nav_menu([
             'theme_location' => 'footer-servicios',
             'container' => false,
-            'menu_class' => 'space-y-2 text-sm opacity-80',
+            'menu_class' => 'space-y-2 opacity-80',
             'fallback_cb' => false
           ]);
           ?>
@@ -98,14 +99,16 @@
 
         <img
           src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/empresa_socialmente_responsable.webp'); ?>"
-          alt="Empresa Socialmente Responsable" class="w-28 mb-6" />
+          alt="Empresa Socialmente Responsable" width="200" height="79" />
 
         <div class="flex gap-4">
           <a href="#" class="hover:text-green-light transition">
-            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Facebook.webp'); ?>">
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Facebook.webp'); ?>" width="40"
+              height="40" alt="facebook">
           </a>
           <a href="#" class="hover:text-green-light transition">
-            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Instagram.webp'); ?>">
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Instagram.webp'); ?>"
+              width="40" height="40" alt="instagram">
           </a>
         </div>
 
@@ -114,25 +117,33 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-white"></div>
+    <div class="my-[20px] border-t border-white"></div>
 
 
     <!-- Bottom -->
-    <div class="flex flex-col md:flex-col justify-center items-center ">
+    <div class="flex gap-[20px]  md:flex-col justify-center items-center ">
 
-      <a href="#" class="">
+      <a href="#" class="w-full text-center font-bold">
         Aviso de Privacidad
       </a>
 
-      <p class="mt-4 md:mt-0">
-        <?php echo date('Y'); ?> © <?php bloginfo('name'); ?>.
-        Todos los derechos reservados.
-      </p>
+      <div class="grid grid-cols-3 w-full">
+        <p class="text-[#505050]">Envíanos tu cotización al correo:
+          <br/>
+          <a class="text-white " href="mailto:Contacto@powerandwells.com">Contacto@powerandwells.com</a>
+        </p>
+        <p class="text-center">
+
+          <?php bloginfo('name'); ?>® <br/>
+          Todos los derechos reservados © <?php echo date('Y'); ?>
+        </p>
+      </div>
 
     </div>
 
   </div>
 </footer>
+<?php wp_footer(); ?>
 </body>
 
 </html>
