@@ -75,12 +75,13 @@
             if ($logo):
               ?>
               <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250" height="59" />
+                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto"
+                  width="250" height="59" />
               </a>
               <!-- logo fallback -->
             <?php else: ?>
               <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp"
+                <img src="<?php echo esc_url(get_template_directory_uri().'/assets/images/logo.webp') ?>"
                   alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250" height="59">
               </a>
             <?php endif; ?>
@@ -99,20 +100,37 @@
 
             <!-- Fallback si no hay menú -->
             <?php if (!has_nav_menu('primary')): ?>
-              <ul id="menu-main-nav" class="primary-menu">
-                <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a
-                    href="#services">Servicios</a></li>
-                <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a
-                    href="#nosotros">Nosotros</a></li>
+              <ul id="menu-main-nav" class="primary-menu flex gap-8">
+                <li class="relative menu-item has-dropdown menu-item">
+
+                  <button class="menu-toggle py-2 inline-flex items-center gap-2" aria-expanded="false"
+                    aria-haspopup="true">
+                    Servicios
+                  </button>
+
+                  <ul class="dropdown absolute z-10 left-0 top-full p-2 opacity-0 invisible translate-y-2 transition-all duration-200 ease-out bg-primary-dark text-white shadow-xl rounded-xl min-w-[220px]">
+
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Diagnostico de pozos</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Automatizacion de sistemas</a>
+                    </li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Equipamiento de pozos</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Mantenimiento</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Servicios especiales</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Electrificacion</a></li>
+                  </ul>
+
+                </li>
+
+                <li class="menu-item">
+                  <a href="#nosotros" class="py-2 inline-block">Nosotros</a>
+                </li>
               </ul>
             <?php endif; ?>
           </div>
 
           <!-- Mobile Menu Button -->
           <button class="mobile-menu-button md:hidden">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+            <img src="<?php echo esc_url( get_template_directory_uri().'/assets/icons/menu.webp' ) ?>" alt="mobile-menu" width="27.93" height="27.93"/>
           </button>
         </div>
       </div>

@@ -52,13 +52,13 @@
     padding: 20px 0 30px;
     .main-menu {
       padding: 7px 0;
-      ul {
+      ul.primary-menu{
         display: inline-flex;
         gap: 40px;
         .menu-item {
           padding: 10px;
           border: 1px solid #fff;
-          a {
+          a,button {
             font-weight: 600;
             line-height: 100%;
             color: white;
@@ -69,7 +69,12 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .site-header{
+    .main-nav{
+      padding: 25px 20.7px 24.88px 20px;
+    }
+  }
 }
 /* contenedor */
 h1 {
