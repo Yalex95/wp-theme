@@ -2,9 +2,13 @@
 get_header();
 ?>
 
-<main class="bg-red-500 ">
+<main class=" ">
 
-  <h1 class="font-bold">Home</h1>
+  <?php 
+  get_template_part('template-parts/sections/hero');
+  get_template_part('template-parts/sections/servicios-especializados');
+  
+  ?>
 </main>
 <?php
 get_footer();

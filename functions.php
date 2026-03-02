@@ -22,7 +22,7 @@ function power_setup() {
 add_action('after_setup_theme', 'power_setup');
 
 // Enqueue tailwind classes and style.css
-function enqueue_tailwind() {
+function enqueue_theme_assets() {
     wp_enqueue_style(
         'tailwind-css',
         get_template_directory_uri().'/assets/css/output.css',
@@ -35,6 +35,29 @@ function enqueue_tailwind() {
         array(),
         filemtime(get_template_directory() . '/style.css')
     );
+    // Swiper CSS
+    wp_enqueue_style(
+        'swiper-css',
+        get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.css',
+        [],
+        '11.0.0'
+    );
+
+    // Swiper JS
+    wp_enqueue_script(
+        'swiper-js',
+        get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js',
+        [],
+        '11.0.0',
+        true
+    );
+    wp_enqueue_script(
+        'theme-main-js',
+        get_template_directory_uri() . '/assets/js/main.js',
+        ['swiper-js'], // dependencia
+        '1.0.0',
+        true
+    );
 }
 
-add_action('wp_enqueue_scripts', 'enqueue_tailwind');
+add_action('wp_enqueue_scripts', 'enqueue_theme_assets');
