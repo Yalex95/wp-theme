@@ -75,13 +75,13 @@
             if ($logo):
               ?>
               <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" />
+                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250" height="59" />
               </a>
               <!-- logo fallback -->
             <?php else: ?>
               <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp"
-                  alt="<?php bloginfo('name'); ?>" class="h-10 w-auto">
+                  alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250" height="59">
               </a>
             <?php endif; ?>
           </div>

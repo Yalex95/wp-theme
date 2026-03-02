@@ -72,12 +72,48 @@
 @media (min-width: 768px) {
 }
 /* contenedor */
-
+h1{
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+h2{
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 100%;
+  color: #000 ;
+  span{
+    color: #4CAA31;
+  }
+}
 /* footer */
 footer {
+  font-size: 15px;
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
   #services {
     font-size: 14px;
     gap: 20px 10px;
     color: rgba(80, 80, 80, 1);
+  }
+  #footer-container {
+    padding: 30px 0 30px;
+  }
+}
+
+/* Servicios especializados */
+#servicios-especializados{
+  padding: 40px 0 50px;
+  #service-card{
+    #button-link{
+      padding: 19px 34.57px 19.93px 20px;
+      border-bottom-right-radius: 20px;
+      corner-shape: bevel;
+      font-size: 18px;
+      font-weight: 600;
+    }
   }
 }
