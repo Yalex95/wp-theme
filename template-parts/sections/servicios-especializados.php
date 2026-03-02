@@ -8,7 +8,7 @@ $servicios = [
   [
     'title' => 'Automatizacion de sistemas',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion.webp',
-    'class'=> 'button-padding'
+    'class' => 'button-padding'
   ],
   [
     'title' => 'Equipamiento de pozos de agua',
@@ -33,47 +33,74 @@ $servicios = [
 
 ?>
 
-<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[135px] gap-[30px]" aria-labelledby="servicios-title">
+<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px]"
+  aria-labelledby="servicios-title">
   <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2>
 
 
-<div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1920px]  w-full ms-auto">
+  <div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1720px]  w-full ms-auto">
     <div class="flex flex-col items-center md:items-start  justify-center md:flex-row md:gap-[30px]">
-    <?php
+
+      <?php
       get_template_part(
         'template-parts/components/swiper-cards/service-card',
         null,
         [
           'title' => 'Perforación de Pozos',
           'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion.webp',
-          'class'=> 'static-slide'
+          'class' => 'static-slide service'
         ],
       )
         ?>
       <div class="swiper services ">
-       
+        <div class="flex flex-row gap-[30px] absolute top-0 w-fit">
+          <button class="servicios-prev bg-red  swiper-button-prev ">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow_prev.webp') ?>" alt=""
+              aria-hidden="true">
+          </button>
+
+          <button class="servicios-next bg-red  swiper-button-next ">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow.webp') ?>" alt=""
+              aria-hidden="true">
+          </button>
+        </div>
         <div class="swiper-wrapper">
-          <?php 
+          <?php
           $counter = 0;
           foreach ($servicios as $servicio) { ?>
-          <!-- !w-[230px] md:!w-[350px] -->
+            <!-- !w-[230px] md:!w-[350px] -->
             <div class="swiper-slide md:!w-[350px]  ">
               <?php
-                get_template_part(
-                  'template-parts/components/swiper-cards/service-card',
-                  null,
-                  $servicio
-                );  ?>
+              get_template_part(
+                'template-parts/components/swiper-cards/service-card',
+                null,
+                $servicio
+              ); ?>
             </div>
           <?php } ?>
         </div>
-    
+
       </div>
     </div>
-    <p>Soluciones integrales para el Óptimo funcionamiento de su pozo de Agua.</p>
-    <button id="catalog" class="bg-green-dark text-white uppercase inline-flex gap-[8px] items-center justify-center">
+
+  </div>
+  <div class="max-w-[320px]  md:max-w-[1620px]  w-full mx-auto mt-[10px] flex flex-col gap-[30px]">
+    <p class="text-[20px] md:max-w-[606px]">Soluciones integrales para el Óptimo funcionamiento de su pozo de Agua.</p>
+    <button id="catalog"
+      class="bg-green-dark text-white uppercase inline-flex gap-[8px] items-center justify-center w-fit">
       descargar catalogo
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/download_icon.webp' )?>" alt="download icon" class="max-h-[22px]" width="22" height="22">
+      <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/download_icon.webp') ?>"
+        alt="download icon" class="max-h-[22px]" width="22" height="22">
     </button>
-</div>
+  </div>
+  <div class="flex flex-col justify-center items-center md:max-w-[1200px] mx-auto gap-[30px]">
+    <h3><span class="font-bold text-[22px]">Cada proyecto que asumimos es un compromiso hacia la excelencia operativa.
+      </span><span class="text-[20px]">Nuestro equipo de ingenieros y
+        técnicos certificados escucha tu necesidad, analiza tu entorno y propone una solución hecha a la medida.</span>
+
+    </h3>
+    <p class="font-bold text-[26px]"><span class="text-green">Así, no solo óperas hoy — óperas con certeza para el
+        mañana.</span></p>
+    <a class="button-link-contact uppercase bg-red text-white"> Recibir Atención Personalizada</a>
+  </div>
 </section>

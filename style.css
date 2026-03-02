@@ -119,21 +119,47 @@ footer {
   padding: 50px 0 50px;
   .service-card {
     #button-link {
-      /* padding: 19px 34.57px 19.93px 20px; */
+      padding: 15px 27.65px 16.13px 15.99px;
       border-bottom-right-radius: 20px;
       corner-shape: bevel;
-      /* font-size: 18px; */
+      font-size: 14px;
       font-weight: 600;
     }
   }
-  .service-card.button-padding{
-    #button-link{
-      padding: 7px 34.57px 7.9px 20px;
+  .service-card.button-padding {
+    #button-link {
+      padding: 5px 27.65px 4.34px 13px;
     }
+  }
+  .button-link-contact {
+    font-family: Exo;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    corner-shape: bevel;
+    padding: 20px 60px 19px 60px;
   }
   .service-card.static-card {
     img {
       border-top-left-radius: 20px;
+      corner-shape: bevel;
+    }
+  }
+  .services {
+    .swiper-button-prev {
+      border-top-left-radius: 10px;
+    }
+    .swiper-button-next {
+      border-bottom-right-radius: 10px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: static;
+      margin: 0;
+      padding: 11px;
       corner-shape: bevel;
     }
   }
@@ -213,12 +239,22 @@ footer {
     }
   }
   #servicios-especializados {
-    padding: 40px 0 50px;
+    padding: 40px 0 110px;
     .service-card {
       #button-link {
         padding: 19px 34.57px 19.93px 20px;
         font-size: 18px;
       }
+    }
+    .service-card.button-padding {
+      #button-link {
+        padding: 7px 34.57px 7.9px 20px;
+      }
+    }
+
+    .services,
+    .static-slide {
+      padding-top: 75.07px;
     }
     #catalog {
       padding: 10.59px 39.62px 10.41px 39px;
