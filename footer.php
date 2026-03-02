@@ -2,11 +2,11 @@
   <div id="footer-container" class="max-w-[1620px] mx-auto ">
 
     <!-- Top Grid -->
-    <div class=" max-w-[1520px] mx-auto grid grid-cols-[330px_970px_250px] ">
+    <div class=" gap-8 md:gap-0 md:max-w-[1520px] mx-auto grid grid-cols-1 md:grid-cols-[330px_970px_250px] ">
 
       <!-- Logo + Dirección -->
-      <section class="mr-[80px]">
-        <div class="mb-[50px]">
+      <section class="md:mr-[80px]">
+        <div class="mb-[20px] md:mb-[50px]">
           <?php
           $custom_logo_id = get_theme_mod('custom_logo');
           $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
@@ -18,9 +18,9 @@
             </a>
             <!-- logo fallback -->
           <?php else: ?>
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold">
+            <a href="<?php echo esc_url(home_url('/')); ?>" >
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp"
-                alt="<?php bloginfo('name'); ?>" width="250" height="59" class="h-10 w-auto">
+                alt="<?php bloginfo('name'); ?>" width="250" height="59" class="h-12 md:h-10 w-auto mx-auto md:ms-auto">
             </a>
           <?php endif; ?>
         </div>
@@ -32,10 +32,10 @@
         </address>
       </section>
 
-      <section class="mr-[20px]">
+      <section class="md:mr-[20px]">
         <!-- Nosotros -->
         <nav aria-label="Nosotros">
-          <h3 class="uppercase tracking-wider mb-[20px]">Nosotros</h3>
+          <h3 class="uppercase tracking-wider mb-[10px] md:mb-[20px]">Nosotros</h3>
         </nav>
 
         <!-- Servicios -->
@@ -51,7 +51,7 @@
           ?>
           <!-- fallback si no hay menu -->
           <?php if (!has_nav_menu('footer-servicios')): ?>
-            <ul id="services" class=" grid grid-cols-4 ">
+            <ul id="services" class=" grid grid-cols-3 md:grid-cols-4 ">
               <li>
                 <a href="#perforacion-pozos-profundos" class="hover:text-white  transition">
                   Perforación de Pozos Profundos
@@ -95,7 +95,7 @@
       </section>
 
       <!-- ESR + Social -->
-      <section class="flex flex-col justify-between">
+      <section class="flex flex-col items-center md:items-start justify-between gap-8 md:gap-0">
 
         <img
           src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/empresa_socialmente_responsable.webp'); ?>"
@@ -121,13 +121,13 @@
 
 
     <!-- Bottom -->
-    <div class="flex gap-[20px]  md:flex-col justify-center items-center ">
+    <div class="flex gap-[20px]  flex-col justify-center items-center ">
 
       <a href="#" class="w-full text-center font-bold">
         Aviso de Privacidad
       </a>
 
-      <div class="grid grid-cols-3 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 w-full text-center md:text-start gap-4 md:gap-0">
         <p class="text-[#505050]">Envíanos tu cotización al correo:
           <br/>
           <a class="text-white " href="mailto:Contacto@powerandwells.com">Contacto@powerandwells.com</a>
