@@ -39,7 +39,7 @@ $servicios = [
 
 
   <div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1720px]  w-full ms-auto">
-    <div class="flex flex-col items-center md:items-start  justify-center md:flex-row md:gap-[30px]">
+    <div class="flex flex-col items-center md:items-start  justify-center md:flex-row gap-[39px] md:gap-[30px]">
 
       <?php
       get_template_part(
@@ -64,7 +64,7 @@ $servicios = [
               aria-hidden="true">
           </button>
         </div>
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper ">
           <?php
           $counter = 0;
           foreach ($servicios as $servicio) { ?>
@@ -84,23 +84,28 @@ $servicios = [
     </div>
 
   </div>
-  <div class="max-w-[320px]  md:max-w-[1620px]  w-full mx-auto mt-[10px] flex flex-col gap-[30px]">
-    <p class="text-[20px] md:max-w-[606px]">Soluciones integrales para el Óptimo funcionamiento de su pozo de Agua.</p>
+
+  <div
+    class="max-w-[280px]  md:max-w-[1620px]  w-full mx-auto mt-[10px] flex flex-col gap-[37px] md:gap-[30px] items-center md:items-start">
+    <p class="text-[16px] md:text-[20px] w-full max-w-[280px] md:max-w-[606px]">Soluciones integrales para el Óptimo
+      funcionamiento de su pozo de Agua.</p>
     <button id="catalog"
-      class="bg-green-dark text-white uppercase inline-flex gap-[8px] items-center justify-center w-fit">
+      class="bg-green-dark text-white uppercase inline-flex gap-[8px] items-center justify-center w-full md:w-fit">
       descargar catalogo
       <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/download_icon.webp') ?>"
         alt="download icon" class="max-h-[22px]" width="22" height="22">
     </button>
   </div>
-  <div class="flex flex-col justify-center items-center md:max-w-[1200px] mx-auto gap-[30px]">
-    <h3><span class="font-bold text-[22px]">Cada proyecto que asumimos es un compromiso hacia la excelencia operativa.
-      </span><span class="text-[20px]">Nuestro equipo de ingenieros y
+  <div class="flex flex-col justify-center items-center max-w-[280px] md:max-w-[1200px] mx-auto gap-[30px]">
+    <h3 class="text-center"><span class="font-bold text-[16px] md:text-[22px]">Cada proyecto que asumimos es un
+        compromiso hacia la excelencia operativa.
+      </span><span class="text-[16px] md:text-[20px]">Nuestro equipo de ingenieros y
         técnicos certificados escucha tu necesidad, analiza tu entorno y propone una solución hecha a la medida.</span>
 
     </h3>
-    <p class="font-bold text-[26px]"><span class="text-green">Así, no solo óperas hoy — óperas con certeza para el
+    <p class="text-center font-bold text-[22px] md:text-[26px]"><span class="text-green-dark">Así, no solo óperas hoy —
+        óperas con certeza para el
         mañana.</span></p>
-    <a class="button-link-contact uppercase bg-red text-white"> Recibir Atención Personalizada</a>
   </div>
+  <a class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit"> Recibir Atención Personalizada</a>
 </section>

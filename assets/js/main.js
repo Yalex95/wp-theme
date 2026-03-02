@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(".swiper.services", {
     loop: true,
-    slidesPerView: 1.5,
+    slidesPerView: 1.3,
     spaceBetween: 10,
-    centeredSlides: true,
-    loop: false,
+    // centeredSlides: true,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: "auto",
         spaceBetween: 30,
         loop: true,
-        centeredSlides: false,
+        // centeredSlides: false,
       },
     },
   });
