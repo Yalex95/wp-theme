@@ -13,12 +13,13 @@ module.exports = {
         },
         green: {
           light: '#63D635',
+          dark: '#4CAA31',
           DEFAULT: '#63D635',
         },
-        green: {
-          dark: '#4CAA31',
-          DEFAULT: '#4CAA31',
-        },
+        // green: {
+        //   dark: '#4CAA31',
+        //   DEFAULT: '#4CAA31',
+        // },
         red: {
           accent: '#E6323B',
           DEFAULT: '#E6323B',
