@@ -10,4 +10,74 @@
  * Requires PHP:      7.4
 */
 
+/* Header */
+.site-header {
+  font-size: 18px;
+}
+.top-bar {
+  padding: 28px 0 0;
+  ul {
+    font-weight: 600;
+    line-height: 100%;
+  }
+}
+#top-bar-container {
+  gap: 40px;
+  padding-bottom: 16px;
+}
+.site-header #phone-lang {
+  gap: 40px;
+  a#phone {
+    padding: 10.5px 15px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  a#whatsapp {
+    padding: 9px 9.64px 9.52px 9px;
+    border-bottom-right-radius: 10px;
+    corner-shape: bevel;
+  }
+  #phone-container {
+    gap: 10px;
+  }
+  .language-switcher {
+    span {
+      margin: 0 5px;
+    }
+  }
+}
+/* main menu */
+.site-header {
+  .main-nav {
+    padding: 20px 0 30px;
+    .main-menu {
+      padding: 7px 0;
+      ul {
+        display: inline-flex;
+        gap: 40px;
+        .menu-item {
+          padding: 10px;
+          border: 1px solid #fff;
+          a {
+            font-weight: 600;
+            line-height: 100%;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+}
+/* contenedor */
 
+/* footer */
+footer {
+  #services {
+    font-size: 14px;
+    gap: 20px 10px;
+    color: rgba(80, 80, 80, 1);
+  }
+}
