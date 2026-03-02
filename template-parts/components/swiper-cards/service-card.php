@@ -5,15 +5,12 @@ $link = $args['link'] ?? '#';
 $alt = $args['alt'] ?? $title;
 ?>
 
-<article id="service-card" class="group bg-white md:max-w-[350px] w-full">
+<article id="service-card" class="group bg-white max-w-[280px]  md:max-w-[350px] w-full">
 
   <a href="<?php echo esc_url($link); ?>" class="block relative w-full aspect-square overflow-hidden">
 
     <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($alt); ?>" width="350" height="350"
       loading="lazy" decoding="async" class="w-full h-full object-cover" />
-
-  
-
   </a>
 
   <div class="mt-6">

@@ -2,17 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(".swiper.services", {
     loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    slidesPerView: 1,
+    centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
 
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        
+      },
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        centeredSlides: false,
+      },
+    },
+  });
 
 });
 

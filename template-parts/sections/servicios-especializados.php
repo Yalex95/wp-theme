@@ -30,12 +30,12 @@ $servicios = [
 
 ?>
 
-<section id="servicios-especializados" class="max-w-[1720px]  w-full ms-auto flex md:flex-col gap-y-[135px]" aria-labelledby="servicios-title">
+<section id="servicios-especializados" class="md:max-w-[1720px]  w-full md:ms-auto flex flex-col md:gap-y-[135px]" aria-labelledby="servicios-title">
   <h2 class="capitalize">Servicios <span>Especializados</span></h2>
 
 
 <div>
-    <div class="flex gap-[30px]">
+    <div class="flex flex-col items-center md:items-start  justify-center md:flex-row md:gap-[30px]">
     <?php
       get_template_part(
         'template-parts/components/swiper-cards/service-card',
@@ -47,20 +47,10 @@ $servicios = [
       )
         ?>
       <div class="swiper services ">
-        <div class="flex gap-[30px] absolute top-0 left-0 z-10">
-          <button class="servicios-prev bg-red p-3">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow_prev.webp') ?>" alt=""
-              aria-hidden="true">
-          </button>
-    
-          <button class="servicios-next bg-red p-3">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow.webp') ?>" alt=""
-              aria-hidden="true">
-          </button>
-        </div>
+       
         <div class="swiper-wrapper">
           <?php foreach ($servicios as $servicio) { ?>
-            <div class="swiper-slide !w-[350px]">
+            <div class="swiper-slide md:!w-[350px]">
               <?php get_template_part(
                 'template-parts/components/swiper-cards/service-card',
                 null,
