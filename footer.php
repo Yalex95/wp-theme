@@ -99,12 +99,12 @@
 
         <img
           src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/empresa_socialmente_responsable.webp'); ?>"
-          alt="Empresa Socialmente Responsable" width="200" height="79" />
+          alt="Empresa Socialmente Responsable" class="md:w-[200px] md:h-[79px]" width="200" height="79" />
 
         <div class="flex gap-4">
           <a href="#" class="hover:text-green-light transition">
             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Facebook.webp'); ?>" width="40"
-              height="40" alt="facebook" class="md:w-[200px] md:h-[79px]">
+              height="40" alt="facebook" class="">
           </a>
           <a href="#" class="hover:text-green-light transition">
             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Instagram.webp'); ?>"

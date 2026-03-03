@@ -6,7 +6,7 @@ $alt = $args['alt'] ?? $title;
 $class = $args['class'] ??'';
 ?>
 
-<article  class="<?php echo esc_attr($class);?> service-card group bg-white max-w-[280px]  md:max-w-[350px] w-full ">
+<article  class="<?php echo esc_attr($class);?> service-card group bg-white   md:max-w-[350px] w-full ">
 
   <a href="<?php echo esc_url($link); ?>" class="block relative w-full aspect-square overflow-hidden">
 

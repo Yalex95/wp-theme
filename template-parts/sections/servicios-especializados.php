@@ -33,7 +33,7 @@ $servicios = [
 
 ?>
 
-<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px]"
+<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px] "
   aria-labelledby="servicios-title">
   <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2>
 
@@ -48,7 +48,7 @@ $servicios = [
         [
           'title' => 'Perforación de Pozos',
           'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion.webp',
-          'class' => 'static-slide service'
+          'class' => 'static-slide service max-w-[280px]'
         ],
       )
         ?>
@@ -107,5 +107,5 @@ $servicios = [
         óperas con certeza para el
         mañana.</span></p>
   </div>
-  <a class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit"> Recibir Atención Personalizada</a>
+  <a href="#" class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit cursor-pointer"> Recibir Atención Personalizada</a>
 </section>
