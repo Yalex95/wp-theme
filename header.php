@@ -21,7 +21,7 @@
           <div class="flex items-center ">
             <?php
             wp_nav_menu([
-              'theme_location' => 'secondary',
+              'theme_location' => 'top_bar',
               'container' => false,
               'menu_class' => 'flex space-x-6 items-center uppercase',
               'fallback_cb' => false
@@ -29,7 +29,7 @@
             ?>
 
             <!-- Fallback si no hay menú -->
-            <?php if (!has_nav_menu('secondary')): ?>
+            <?php if (!has_nav_menu('top_bar')): ?>
               <ul id="menu-top-bar" class="flex space-x-6 items-center uppercase">
                 <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a
                     href="<?php echo get_permalink(get_page_by_path('blog')); ?>">Blog</a></li>
@@ -94,7 +94,7 @@
             wp_nav_menu([
               'theme_location' => 'primary',
               'container' => false,
-              'menu_class' => 'primary-menu',
+              'menu_class' => 'primary-menu flex gap-8',
               'fallback_cb' => false
             ]);
             ?>

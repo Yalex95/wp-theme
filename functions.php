@@ -15,8 +15,8 @@ function power_setup()
 
     register_nav_menus(array(
         'primary' => __('Primary Menu', 'power-and-wells'),
-        'secondary' => __('Secondary Menu', 'power-and-wells'),
-        'footer-servicios' => 'Footer Servicios',
+        'top_bar' => __('Top bar', 'power-and-wells'),
+        'footer-services' => 'Footer Services',
     ));
 }
 
@@ -57,6 +57,13 @@ function enqueue_theme_assets()
         'theme-main-js',
         get_template_directory_uri() . '/assets/js/main.js',
         ['swiper-js'],
+        '1.0.0',
+        true
+    );
+    wp_enqueue_script(
+        'service-menu',
+        get_template_directory_uri() . '/assets/js/service-menu.js',
+        [],
         '1.0.0',
         true
     );

@@ -22,14 +22,14 @@
     <div class="secondary-menu mt-6">
       <?php
       wp_nav_menu([
-        'theme_location' => 'secondary',
+        'theme_location' => 'top_bar',
         'container' => false,
-        'menu_class' => 'secondary-menu',
+        'menu_class' => 'secondary-menu uppercase',
         'fallback_cb' => false
       ]);
-       if (!has_nav_menu('secondary')): ?>
-        <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>">Blog</a>
-        <a href="<?php echo get_permalink(get_page_by_path('contacto')); ?>">Contacto</a>
+       if (!has_nav_menu('top_bar')): ?>
+        <a class="uppercase" href="<?php echo get_permalink(get_page_by_path('blog')); ?>">Blog</a>
+        <a class="uppercase" href="<?php echo get_permalink(get_page_by_path('contacto')); ?>">Contacto</a>
       <?php endif; ?>
     </div>
 
@@ -40,7 +40,7 @@
   wp_nav_menu([
     'theme_location' => 'primary',
     'container' => false,
-    'menu_class' => 'primary-menu',
+    'menu_class' => 'primary-menu uppercase',
     'fallback_cb' => false
   ]);
   ?>
