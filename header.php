@@ -133,7 +133,7 @@
           <!-- burger button -->
           <button id="open-mobile-menu" class="mobile-menu-button md:hidden" aria-controls="mobile-menu"
             aria-expanded="false">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/menu.webp') ?>" alt="Abrir menú"
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/menu.webp') ?>" alt="Abrir menu"
               width="27.93" height="27.93" />
           </button>
         </div>

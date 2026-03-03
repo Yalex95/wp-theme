@@ -4,29 +4,35 @@ $servicios = [
   [
     'title' => 'Diagnóstico de Pozos',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_diagnostico.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_diagnostico_280.webp',
   ],
   [
     'title' => 'Automatizacion de sistemas',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion_280.webp',
     'class' => 'button-padding'
   ],
   [
     'title' => 'Equipamiento de pozos de agua',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_equipamiento.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_equipamiento_280.webp',
     'class' => 'button-padding'
   ],
   [
     'title' => 'Mantenimiento a pozos de agua y equipos de bombeo',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_mantenimiento.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_mantenimiento_280.webp',
     'class' => 'button-padding'
   ],
   [
     'title' => 'Servicios especiales',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_automatizacion_280.webp',
   ],
   [
     'title' => 'Electrificacion de pozos',
     'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_equipamiento.webp',
+    'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_equipamiento_280.webp',
   ],
 ];
 
@@ -50,6 +56,7 @@ $servicios = [
         [
           'title' => 'Perforación de Pozos',
           'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion.webp',
+          'img_small' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion_280.webp',
           'class' => 'static-slide service max-w-[280px]'
         ],
       )
@@ -57,13 +64,13 @@ $servicios = [
       <div class="swiper services ">
         <div class="flex flex-row gap-[30px] absolute top-0 w-fit">
           <button class="servicios-prev bg-red  swiper-button-prev ">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow_prev.webp') ?>" alt=""
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow_prev.webp') ?>" alt="servicio anterior" width="22.5" height="22.5"
               aria-hidden="true">
           </button>
 
           <button class="servicios-next bg-red  swiper-button-next ">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow.webp') ?>" alt=""
-              aria-hidden="true">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow.webp') ?>" alt="siguiente servicio"
+              aria-hidden="true" width="22.5" height="22.5">
           </button>
         </div>
         <div class="swiper-wrapper ">
