@@ -40,10 +40,9 @@ $servicios = [
       Servicios <span>Especializados</span>
     </h2>
   </div>
-
   <div class="   w-full md:max-w-[calc(100%-80px)] xl:max-w-[1720px]  2xl:max-w-[calc(100%-200px)] ms-auto">
-    <div class="flex flex-col md:flex-row items-center md:items-start  justify-center  gap-[39px] md:gap-[20px] pl-[20px] md:p-0">
-
+    <div
+      class="flex flex-col md:flex-row items-center md:items-start  justify-center  gap-[39px] md:gap-[20px] pl-[20px] md:p-0">
       <?php
       get_template_part(
         'template-parts/components/swiper-cards/service-card',
@@ -71,7 +70,6 @@ $servicios = [
           <?php
           $counter = 0;
           foreach ($servicios as $servicio) { ?>
-            <!-- !w-[230px] md:!w-[350px] -->
             <div class="swiper-slide md:!w-[350px]  ">
               <?php
               get_template_part(
@@ -82,12 +80,9 @@ $servicios = [
             </div>
           <?php } ?>
         </div>
-
       </div>
     </div>
-
   </div>
-
   <div
     class="max-w-[280px]  md:max-w-[1620px]  w-full mx-auto mt-[10px] flex flex-col gap-[37px] md:gap-[30px] items-center md:items-start">
     <p class="text-[16px] md:text-[20px] w-full max-w-[280px] md:max-w-[606px]">Soluciones integrales para el Óptimo
@@ -110,5 +105,7 @@ $servicios = [
         óperas con certeza para el
         mañana.</span></p>
   </div>
-  <a href="#" class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit cursor-pointer"> Recibir Atención Personalizada</a>
+  <a href="#"
+    class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit cursor-pointer">
+    Recibir Atención Personalizada</a>
 </section>

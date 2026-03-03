@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     slidesPerView: 1.3,
     spaceBetween: 10,
-    // centeredSlides: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: "auto",
         spaceBetween: 30,
         loop: true,
-        // centeredSlides: false,
       },
     },
   });

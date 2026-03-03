@@ -13,6 +13,7 @@
 <body <?php body_class(); ?>>
 
   <header class="site-header bg-primary text-white">
+    <!-- top bar -->
     <div class="top-bar hidden md:block">
       <div class="container md:max-w-[1620px] mx-auto px-4 border-white border-b">
         <div id="top-bar-container" class="flex flex-wrap items-center justify-center ">
@@ -63,11 +64,11 @@
         </div>
       </div>
     </div>
-    <!-- Main Navigation -->
+    <!-- navegacion principal -->
     <nav class="main-nav">
       <div class="container md:max-w-[1620px] md:px-[50px] mx-auto ">
         <div class="flex flex-wrap items-center justify-between">
-          <!-- Logo -->
+          <!-- logo -->
           <div class="logo">
             <?php
             $custom_logo_id = get_theme_mod('custom_logo');
@@ -75,19 +76,19 @@
             if ($logo):
               ?>
               <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="md:h-[58px] md:w-[250px]"
-                  width="250" height="59" />
+                <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>"
+                  class="md:h-[58px] md:w-[250px]" width="250" height="59" />
               </a>
               <!-- logo fallback -->
             <?php else: ?>
               <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold">
-                <img src="<?php echo esc_url(get_template_directory_uri().'/assets/images/logo.webp') ?>"
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo.webp') ?>"
                   alt="<?php bloginfo('name'); ?>" class="md:h-[58px] md:w-[250px] " width="250" height="59">
               </a>
             <?php endif; ?>
           </div>
 
-          <!-- Main Menu -->
+          <!-- menu principal -->
           <div class="main-menu hidden md:block">
             <?php
             wp_nav_menu([
@@ -108,7 +109,8 @@
                     Servicios
                   </button>
 
-                  <ul class="dropdown absolute z-10 left-0 top-full p-2 opacity-0 invisible translate-y-2 transition-all duration-200 ease-out bg-primary-dark text-white shadow-xl rounded-xl min-w-[220px]">
+                  <ul
+                    class="dropdown absolute z-10 left-0 top-full p-2 opacity-0 invisible translate-y-2 transition-all duration-200 ease-out bg-primary-dark text-white shadow-xl rounded-xl min-w-[220px]">
 
                     <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Diagnostico de pozos</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:bg-white/10 capitalize">Automatizacion de sistemas</a>
@@ -128,12 +130,16 @@
             <?php endif; ?>
           </div>
 
-          <!-- Mobile Menu Button -->
-          <button class="mobile-menu-button md:hidden">
-            <img src="<?php echo esc_url( get_template_directory_uri().'/assets/icons/menu.webp' ) ?>" alt="mobile-menu" width="27.93" height="27.93"/>
+          <!-- burger button -->
+          <button id="open-mobile-menu" class="mobile-menu-button md:hidden" aria-controls="mobile-menu"
+            aria-expanded="false">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/menu.webp') ?>" alt="Abrir menú"
+              width="27.93" height="27.93" />
           </button>
         </div>
+
       </div>
     </nav>
+    <?php get_template_part('template-parts/components/mobile-nav'); ?>
 
   </header>
