@@ -13,19 +13,19 @@
           if ($logo):
             ?>
             <a href="<?php echo esc_url(home_url('/')); ?>">
-              <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="h-10 w-auto" width="250"
+              <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="md:h-[58px] md:w-[250px] mx-auto md:ms-auto" width="250"
                 height="59" />
             </a>
             <!-- logo fallback -->
           <?php else: ?>
             <a href="<?php echo esc_url(home_url('/')); ?>" >
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp"
-                alt="<?php bloginfo('name'); ?>" width="250" height="59" class="h-12 md:h-10 w-auto mx-auto md:ms-auto">
+                alt="<?php bloginfo('name'); ?>" width="250" height="59" class="md:h-[58px] md:w-[250px] mx-auto md:ms-auto">
             </a>
           <?php endif; ?>
         </div>
 
-        <address class="not-italic leading-relaxed ">
+        <address class="not-italic leading-relaxed md:text-[15px]">
           <strong>Dirección:</strong><br>
           C. Nueva Orleans 1127, La Aurora,<br>
           44460 Guadalajara, Jal.
@@ -35,12 +35,12 @@
       <section class="md:mr-[20px]">
         <!-- Nosotros -->
         <nav aria-label="Nosotros">
-          <h3 class="uppercase tracking-wider mb-[10px] md:mb-[20px]">Nosotros</h3>
+          <h3 class="capitalize tracking-wider mb-[10px] md:mb-[20px]">Nosotros</h3>
         </nav>
 
         <!-- Servicios -->
         <nav aria-labelledby="footer-servicios-title">
-          <h3 id="footer-servicios-title" class="uppercase tracking-wider mb-4">Servicios</h3>
+          <h3 id="footer-servicios-title" class="capitalize tracking-wider mb-4">Servicios</h3>
           <?php
           wp_nav_menu([
             'theme_location' => 'footer-servicios',
@@ -51,7 +51,7 @@
           ?>
           <!-- fallback si no hay menu -->
           <?php if (!has_nav_menu('footer-servicios')): ?>
-            <ul id="services" class=" grid grid-cols-3 md:grid-cols-4 ">
+            <ul id="services" class="list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]">
               <li>
                 <a href="#perforacion-pozos-profundos" class="hover:text-white  transition">
                   Perforación de Pozos Profundos
@@ -95,7 +95,7 @@
       </section>
 
       <!-- ESR + Social -->
-      <section class="flex flex-col items-center md:items-start justify-between gap-8 md:gap-0">
+      <section class="flex flex-col items-center md:items-start justify-between gap-8 md:gap-0 mt-[30px]">
 
         <img
           src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/empresa_socialmente_responsable.webp'); ?>"
@@ -104,7 +104,7 @@
         <div class="flex gap-4">
           <a href="#" class="hover:text-green-light transition">
             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Facebook.webp'); ?>" width="40"
-              height="40" alt="facebook">
+              height="40" alt="facebook" class="md:w-[200px] md:h-[79px]">
           </a>
           <a href="#" class="hover:text-green-light transition">
             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/icons/Instagram.webp'); ?>"
@@ -123,11 +123,11 @@
     <!-- Bottom -->
     <div class="flex gap-[20px]  flex-col justify-center items-center ">
 
-      <a href="#" class="w-full text-center font-bold">
+      <a href="#" class="w-full text-center font-bold md:text-[18px]">
         Aviso de Privacidad
       </a>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 w-full text-center md:text-start gap-4 md:gap-0">
+      <div class="grid grid-cols-1 md:grid-cols-3 w-full text-center md:text-start gap-4 md:gap-0 md:text-[15px]">
         <p class="text-[#505050]">Envíanos tu cotización al correo:
           <br/>
           <a class="text-white " href="mailto:Contacto@powerandwells.com">Contacto@powerandwells.com</a>

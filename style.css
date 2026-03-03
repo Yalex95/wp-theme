@@ -121,8 +121,6 @@ footer {
      {
       padding-top: 65px;
       margin-left: 20px;
-      /* margin-left: auto;
-      margin-right: 0; */
       overflow: hidden;
     }
   .service-card {
@@ -146,7 +144,7 @@ footer {
     font-size: 14px;
 
     letter-spacing: 0%;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 30px;
     border-bottom-right-radius: 20px;
     corner-shape: bevel;
     padding: 14px 34px 15px 33px;
@@ -240,7 +238,7 @@ footer {
       font-size: 20px;
     }
     #services {
-      font-size: 14px;
+      font-size: 15px;
       gap: 20px 10px;
     }
     #footer-container {
