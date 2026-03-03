@@ -84,7 +84,7 @@ footer {
     font-size: 14px;
     font-weight: 700;
   }
-  #services {
+  .footer-services {
     font-size: 10px;
     gap: 10px;
     color: rgba(80, 80, 80, 1);
@@ -426,7 +426,7 @@ footer {
     h3 {
       font-size: 20px;
     }
-    #services {
+    .footer-services {
       font-size: 15px;
       gap: 20px 10px;
     }

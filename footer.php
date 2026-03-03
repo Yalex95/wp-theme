@@ -41,13 +41,13 @@
           wp_nav_menu([
             'theme_location' => 'footer-services',
             'container' => false,
-            'menu_class' => 'space-y-2 opacity-80',
+            'menu_class' => 'footer-services md:list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]',
             'fallback_cb' => false
           ]);
           ?>
           <!-- fallback si no hay menu -->
           <?php if (!has_nav_menu('footer-services')): ?>
-            <ul id="services" class="md:list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]">
+            <ul id="services" class="footer-services md:list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]">
               <li>
                 <a href="#perforacion-pozos-profundos" class="hover:text-white  transition">
                   Perforación de Pozos Profundos
