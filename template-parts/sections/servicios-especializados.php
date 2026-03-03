@@ -33,13 +33,17 @@ $servicios = [
 
 ?>
 
-<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px] "
+<section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px] overflow-x-clip"
   aria-labelledby="servicios-title">
-  <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2>
-
-
-  <div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1720px]  w-full ms-auto">
-    <div class="flex flex-col items-center md:items-start  justify-center md:flex-row gap-[39px] md:gap-[30px]">
+  <!-- <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2> -->
+  <div class="w-full px-5 md:px-0">
+    <h2 id="servicios-title" class="capitalize max-w-[1620px] w-full mx-auto">
+      Servicios <span>Especializados</span>
+    </h2>
+  </div>
+<!-- services slider -->
+  <div class=" w-full md:max-w-[calc(100%-80px)] xl:max-w-[1720px]  2xl:max-w-[calc(100%-200px)] ms-auto relative">
+    <div class="flex flex-col md:flex-row gap-[39px] md:gap-[20px] items-center md:items-start">
 
       <?php
       get_template_part(
@@ -48,18 +52,18 @@ $servicios = [
         [
           'title' => 'Perforación de Pozos',
           'image' => get_template_directory_uri() . '/assets/images/servicio_especializado_perforacion.webp',
-          'class' => 'static-slide service max-w-[280px]'
+          'class' => 'static-slide service w-[280px] md:w-[350px] flex-shrink-0'
         ],
       )
         ?>
-      <div class="swiper services ">
+      <div class="swiper services">
         <div class="flex flex-row gap-[30px] absolute top-0 w-fit">
-          <button class="servicios-prev bg-red  swiper-button-prev ">
+          <button class="servicios-prev swiper-button-prev  bg-red " aria-label="Servicio anterior">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow_prev.webp') ?>" alt=""
               aria-hidden="true">
           </button>
 
-          <button class="servicios-next bg-red  swiper-button-next ">
+          <button class="servicios-next swiper-button-next  bg-red " aria-label="Servicio siguiente">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/icons/arrow.webp') ?>" alt=""
               aria-hidden="true">
           </button>
@@ -68,8 +72,7 @@ $servicios = [
           <?php
           $counter = 0;
           foreach ($servicios as $servicio) { ?>
-            <!-- !w-[230px] md:!w-[350px] -->
-            <div class="swiper-slide md:!w-[350px]  ">
+            <div class="swiper-slide !w-[280px] md:!w-[350px] h-auto">
               <?php
               get_template_part(
                 'template-parts/components/swiper-cards/service-card',
@@ -107,5 +110,7 @@ $servicios = [
         óperas con certeza para el
         mañana.</span></p>
   </div>
-  <a href="#" class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit cursor-pointer"> Recibir Atención Personalizada</a>
+  <a href="#"
+    class="button-link-contact uppercase bg-red text-white mx-[10px] text-center md:mx-auto md:w-fit cursor-pointer">
+    Recibir Atención Personalizada</a>
 </section>
