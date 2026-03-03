@@ -25,7 +25,7 @@
           <?php endif; ?>
         </div>
 
-        <address class="not-italic leading-relaxed md:text-[15px]">
+        <address class="not-italic leading-relaxed text-[12px] md:text-[15px]">
           <strong>Dirección:</strong><br>
           C. Nueva Orleans 1127, La Aurora,<br>
           44460 Guadalajara, Jal.
@@ -51,7 +51,7 @@
           ?>
           <!-- fallback si no hay menu -->
           <?php if (!has_nav_menu('footer-servicios')): ?>
-            <ul id="services" class="list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]">
+            <ul id="services" class="md:list-disc marker:text-xs grid grid-cols-3 md:grid-cols-4 md:text-[15px]">
               <li>
                 <a href="#perforacion-pozos-profundos" class="hover:text-white  transition">
                   Perforación de Pozos Profundos
@@ -123,11 +123,11 @@
     <!-- Bottom -->
     <div class="flex gap-[20px]  flex-col justify-center items-center ">
 
-      <a href="#" class="w-full text-center font-bold md:text-[18px]">
+      <a href="#" class="w-full text-center font-bold text-[14px] md:text-[18px]">
         Aviso de Privacidad
       </a>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 w-full text-center md:text-start gap-4 md:gap-0 md:text-[15px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 w-full text-center md:text-start gap-4 md:gap-0 md:text-[15px] text-[12px]">
         <p class="text-[#505050]">Envíanos tu cotización al correo:
           <br/>
           <a class="text-white " href="mailto:Contacto@powerandwells.com">Contacto@powerandwells.com</a>
