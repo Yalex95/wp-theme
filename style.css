@@ -11,39 +11,22 @@
 */
 
 /* Header */
-.site-header {
-  /* font-size: 18px; */
-}
+
 .top-bar {
-  /* padding: 28px 0 0; */
   ul {
     font-weight: 600;
     line-height: 100%;
   }
 }
-#top-bar-container {
-  /* gap: 40px;
-  padding-bottom: 16px; */
-}
+
 .site-header #phone-lang {
-  /* gap: 40px; */
   a#phone {
-    /* padding: 10.5px 15px; */
     font-weight: 400;
     line-height: 100%;
   }
   a#whatsapp {
-    /* padding: 9px 9.64px 9.52px 9px; */
     border-bottom-right-radius: 10px;
     corner-shape: bevel;
-  }
-  #phone-container {
-    /* gap: 10px; */
-  }
-  .language-switcher {
-    span {
-      /* margin: 0 5px; */
-    }
   }
 }
 /* main menu */
@@ -52,12 +35,9 @@
     padding: 25px 20.7px 24.88px 20px;
 
     .main-menu {
-      /* padding: 7px 0; */
       ul.primary-menu {
         display: inline-flex;
-        /* gap: 40px; */
         .menu-item {
-          /* padding: 10px; */
           border: 1px solid #fff;
           a,
           button {
@@ -99,7 +79,6 @@ h2 {
 }
 /* footer */
 footer {
-  /* font-size: 15px; */
   h3 {
     font-size: 14px;
     font-weight: 700;
@@ -117,12 +96,11 @@ footer {
 /* Servicios especializados */
 #servicios-especializados {
   padding: 50px 0 50px;
-   .services
-     {
-      padding-top: 65px;
-      margin-left: 20px;
-      overflow: hidden;
-    }
+  .services {
+    padding-top: 65px;
+    /* padding-left: 20px; */
+    overflow: hidden;
+  }
   .service-card {
     #button-link {
       padding: 15px 27.65px 16.13px 15.99px;
@@ -192,9 +170,6 @@ footer {
           gap: 40px;
           .menu-item {
             padding: 10px;
-            button,
-            a {
-            }
           }
         }
       }
@@ -258,10 +233,9 @@ footer {
         padding: 7px 34.57px 7.9px 20px;
       }
     }
-    .button-link-contact{
-    font-size: 22px;
-    padding: 20px 60px 19px 60px;
-      
+    .button-link-contact {
+      font-size: 22px;
+      padding: 20px 60px 19px 60px;
     }
 
     .services,

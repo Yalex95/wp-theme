@@ -35,11 +35,14 @@ $servicios = [
 
 <section id="servicios-especializados" class=" w-full  flex flex-col md:gap-y-[60px] gap-[30px] "
   aria-labelledby="servicios-title">
-  <h2 class="capitalize max-w-[320px]  md:max-w-[1620px]  w-full mx-auto">Servicios <span>Especializados</span></h2>
+  <div class="w-full px-5 md:px-0">
+    <h2 id="servicios-title" class="capitalize max-w-[1620px] w-full mx-auto">
+      Servicios <span>Especializados</span>
+    </h2>
+  </div>
 
-
-  <div class=" md:max-w-[1720px]  xl:max-w-[1720px] 2xl:max-w-[1720px]  w-full ms-auto">
-    <div class="flex flex-col items-center md:items-start  justify-center md:flex-row gap-[39px] md:gap-[30px]">
+  <div class="   w-full md:max-w-[calc(100%-80px)] xl:max-w-[1720px]  2xl:max-w-[calc(100%-200px)] ms-auto">
+    <div class="flex flex-col md:flex-row items-center md:items-start  justify-center  gap-[39px] md:gap-[20px] pl-[20px] md:p-0">
 
       <?php
       get_template_part(
