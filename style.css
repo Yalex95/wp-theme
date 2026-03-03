@@ -98,13 +98,12 @@ footer {
   padding: 50px 0 50px;
   .services {
     padding-top: 65px;
-    /* padding-left: 20px; */
     overflow: hidden;
   }
   .service-card {
     #button-link {
       padding: 15px 27.65px 16.13px 15.99px;
-      border-bottom-right-radius: 20px;
+      border-bottom-right-radius: 25px;
       corner-shape: bevel;
       font-size: 14px;
       font-weight: 600;
@@ -123,7 +122,7 @@ footer {
 
     letter-spacing: 0%;
     border-top-left-radius: 30px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 30px;
     corner-shape: bevel;
     padding: 14px 34px 15px 33px;
   }
